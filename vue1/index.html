@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+         <p>购物车(10)</p>
+         <a class="compile">编辑</a>
+    </header>
+    <section class="content">
+       <div class="tip">
+       	  <dl>
+       	  	<dt><i class="fa fa-bell"></i></dt>
+       	  	<dd><p>我的天猫超市卡可用余额: 79.8元，在天猫APP可使用超市卡结算喵!</p>
+       	  	<span>×</span>
+       	  	</dd>
+       	  </dl>
+       </div>
+       <div class="con" id="con">
+        <div class="shang" v-for="key in brr">
+        	<div class="top">
+          	  <input type="checkbox">
+          	  <label for="">{{key.name}} <span>></span></label>
+            </div>
+            <div class="bot">
+               <dl v-for="k in key.arr">
+                	<dt><input type="checkbox"></dt>
+                	<dd><img v-bind:src="k.src" alt=""></dd>
+                	<dd class="direction">
+                		<h3>{{k.title}}
+                		<img src="images/shang_03.jpg" alt="">
+                		</h3>
+                		<p>
+                			<span class="price">￥{{k.price}}</span>
+                			<span class="yuan">￥{{k.old}}</span>
+                			<span class="num">x1</span>
+                		</p>
+                	</dd>
+               </dl>
+            </div>
+        </div>
+       </div>
+    </section>
+    <div class="all">
+      <p class="check"><input type="checkbox"> 全选</p>
+      <p class="sum">合计: <span>￥0</span></p>
+      <p class="jie"><button>结算(<span>0</span>)</button></p>
+    </div>
+    <footer class="footer">
+         <ul class="list">
+         	<li>
+         		<i class="fa fa-home"></i>
+         		<span>首页</span>
+         	</li>
+         	<li>
+         		<i class="fa fa-heart"></i>
+         		<span>微淘</span>
+         	</li>
+         	<li>
+         		<i class="fa fa-comment-o"></i>
+         		<span>消息</span>
+         	</li>
+         	<li>
+         		<i class="fa fa-shopping-cart"></i>
+         		<span>购物车</span>
+         	</li>
+         	<li>
+         		<i class="fa fa-user-o"></i>
+         		<span>我的</span>
+         	</li>
+         </ul>
+    </footer>
+</body>
+<script type='text/javascript' src='common/vue2.js'></script>
+<script type='text/javascript' src='common/jquery.js'></script>
+<script>
+
+   var vm=new Vue({
+      el:"#con",
+      data:{
+         brr:null
+      },
+      created(){
+      	var that=this;
+      	 $.ajax({
+	     	url:"http://127.0.0.1:8888/tab",
+	     	success:function(rs){
+              that.brr=rs;
+	     	}
+	     })
+      }
+   })
+
+</script>
+</html>
