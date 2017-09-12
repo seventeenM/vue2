@@ -1,0 +1,62 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: .12rem;
+  direction: flex;
+  flex-direction: column; }
+
+.header {
+  height: .5rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+  line-height: .5rem;
+  font-size: .16rem; }
+  .header i {
+    font-size: .3rem;
+    position: absolute;
+    top: .1rem;
+    left: .1rem; }
+
+.content {
+  flex: 1;
+  overflow: auto; }
+  .content .froms {
+    padding: .15rem;
+    box-sizing: border-box; }
+    .content .froms p {
+      display: flex;
+      border-bottom: 1px solid #eee;
+      padding: .15rem;
+      font-size: .14rem;
+      box-sizing: border-box; }
+      .content .froms p .qian {
+        border-right: 1px solid #ccc;
+        border-left: none;
+        height: .25rem; }
+      .content .froms p span {
+        padding-left: .1rem;
+        padding-right: .1rem;
+        border-left: 1px solid #ccc; }
+      .content .froms p input {
+        flex: 1;
+        border: none;
+        padding-left: .05rem;
+        box-sizing: border-box; }
+      .content .froms p input::placeholder {
+        color: #ccc; }
+      .content .froms p button {
+        width: 100%;
+        height: .4rem;
+        background: #ccc;
+        border: none;
+        color: #fff; }
+    .content .froms .han {
+      font-size: .12rem;
+      color: #a1a1a1;
+      border: none; }
+
+/*# sourceMappingURL=style.css.map */

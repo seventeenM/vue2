@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/animate.css">
+  <link type="text/css" rel="stylesheet" href="css/reset.css">
+  <link type="text/css" rel="stylesheet" href="css/common.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <i class="fa fa-angle-left"></i>
+    <p>京东注册</p>
+  </header>
+  <section class="content" id="app">
+
+    <div class="froms">
+      <transition enter-active-class="animated bounce" leave-active-class="animated bounce">
+        <div v-if="state">
+          <p>
+            <input type="text" placeholder="请输入图片验证码" v-model="pic">
+            <span>FMM</span>
+          </p>
+          <p>
+            <span class="qian">+86</span>
+            <input type="text" placeholder="请输入手机号" v-model="phone">
+            <span>验证码</span></p>
+          <p><input type="text" placeholder="请输入手机验证码" v-model="phone1"></p>
+          <p><input type="password" placeholder="请设置6-20位登录密码" v-model="pwd"></p>
+          <p class="han">密码由6-20位字母、数字或半角符号租车，不能是10位以下纯数字/字母/半角符号，字母需区分大小写</p>
+        </div>
+      </transition>
+      <p><button @click="fn">注册</button></p>
+    </div>
+  </section>
+
+</body>
+<script type='text/javascript' src='js/vue.js'></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script>
+  var vm = new Vue({
+    el: "#app",
+    data: {
+      state: true,
+      arr: [],
+      pic: "",
+      phone: "",
+      phone1: "",
+      pwd: "",
+      obj: {}
+    },
+    methods: {
+      fn() {
+        this.state = !this.state;
+
+        this.obj.pic = this.pic;
+        this.obj.phone = this.phone;
+        this.obj.phone1 = this.phone1;
+        this.obj.pwd = this.pwd;
+        console.log(this.obj)
+      }
+    },
+    mounted() {
+
+    }
+  })
+
+</script>
+
+</html>
