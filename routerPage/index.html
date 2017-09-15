@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/reset.css">
+  <link type="text/css" rel="stylesheet" href="css/common.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="box">
+
+    <header class="header">
+      <span class="left"><i class="fa fa-envelope-o"></i></span>
+      <span class="right1"><i class="fa fa-download"></i></span>
+      <span class="right2"><i class="fa fa-clock-o"></i></span>
+      <input type="text" placeholder="双复花嘟嘟">
+    </header>
+    <section class="content">
+
+      <router-view></router-view>
+
+    </section>
+    <footer class="footer">
+      <ul class="list">
+        <router-link to="/index" tag="li">
+          <i class="fa fa-home"></i>
+          <span>消息</span>
+        </router-link>
+        <router-link to="/app" tag="li">
+          <i class="fa fa-info"></i>
+          <span>联系人</span>
+        </router-link>
+        <router-link to="/f3" tag="li">
+          <i class="fa fa-user"></i>
+          <span>动态</span>
+        </router-link>
+        <router-link to="/f4" tag="li">
+          <i class="fa fa-info"></i>
+          <span>联系人</span>
+        </router-link>
+        <router-link to="/f5" tag="li">
+          <i class="fa fa-user"></i>
+          <span>动态</span>
+        </router-link>
+
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
