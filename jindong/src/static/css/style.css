@@ -1,0 +1,251 @@
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .12rem; }
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.cons {
+  flex: 1;
+  overflow: auto; }
+  .cons .main {
+    height: 100%; }
+    .cons .main #pad {
+      position: fixed;
+      bottom: .5rem;
+      left: 0;
+      height: .3rem;
+      background: #ccc;
+      text-align: center;
+      line-height: .3rem;
+      width: 100%;
+      font-size: .18rem;
+      display: none; }
+    .cons .main #wrap {
+      position: relative;
+      overflow: auto; }
+      .cons .main #wrap .header {
+        height: .5rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        z-index: 111; }
+        .cons .main #wrap .header i {
+          font-size: .25rem; }
+        .cons .main #wrap .header .left {
+          position: absolute;
+          top: .12rem;
+          left: .1rem; }
+        .cons .main #wrap .header .right {
+          position: absolute;
+          top: .12rem;
+          right: .1rem; }
+        .cons .main #wrap .header p {
+          flex: 1;
+          padding: .1rem;
+          padding-left: .5rem;
+          padding-right: .5rem; }
+          .cons .main #wrap .header p input {
+            width: 100%;
+            height: .3rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding-left: .15rem;
+            box-sizing: border-box; }
+      .cons .main #wrap #scroll {
+        flex: 1;
+        overflow: auto; }
+        .cons .main #wrap #scroll .content {
+          padding-bottom: .3rem;
+          background: #f5f5f5; }
+          .cons .main #wrap #scroll .content .banner {
+            height: 176px; }
+            .cons .main #wrap #scroll .content .banner img {
+              width: 100%;
+              display: block;
+              max-height: 176px; }
+          .cons .main #wrap #scroll .content .small {
+            height: 100px; }
+            .cons .main #wrap #scroll .content .small img {
+              max-height: 100px; }
+          .cons .main #wrap #scroll .content .big {
+            height: 170px;
+            padding-left: .05rem;
+            padding-right: .05rem;
+            box-sizing: border-box; }
+            .cons .main #wrap #scroll .content .big img {
+              max-height: 170px; }
+          .cons .main #wrap #scroll .content .nav {
+            height: 2.1rem; }
+            .cons .main #wrap #scroll .content .nav .alls {
+              display: flex;
+              flex-wrap: wrap; }
+              .cons .main #wrap #scroll .content .nav .alls dl {
+                width: 20%;
+                text-align: center; }
+                .cons .main #wrap #scroll .content .nav .alls dl dt {
+                  padding: .1rem;
+                  box-sizing: border-box; }
+                  .cons .main #wrap #scroll .content .nav .alls dl dt img {
+                    width: 50px; }
+                .cons .main #wrap #scroll .content .nav .alls dl dd {
+                  padding-top: .05rem;
+                  font-size: .14rem; }
+          .cons .main #wrap #scroll .content .hot {
+            padding: .2rem;
+            box-sizing: border-box; }
+            .cons .main #wrap #scroll .content .hot p {
+              height: .3rem;
+              line-height: .3rem;
+              background: #fff;
+              border-radius: 20px;
+              font-size: .14rem; }
+              .cons .main #wrap #scroll .content .hot p span {
+                font-size: .16rem; }
+          .cons .main #wrap #scroll .content .miaosha {
+            font-size: .14rem; }
+            .cons .main #wrap #scroll .content .miaosha .m_top {
+              height: .3rem;
+              line-height: .3rem;
+              background: #ffffff;
+              position: relative;
+              padding-left: .04rem;
+              color: #020202; }
+              .cons .main #wrap #scroll .content .miaosha .m_top b {
+                color: #e71137;
+                font-size: .14rem; }
+                .cons .main #wrap #scroll .content .miaosha .m_top b i {
+                  color: #cf4d55;
+                  padding: 0 .04rem; }
+              .cons .main #wrap #scroll .content .miaosha .m_top .time {
+                display: inline-block;
+                height: .11rem;
+                width: .12rem;
+                background: #0f0f0f;
+                line-height: .11rem;
+                color: #bbbbbb;
+                font-size: .1rem;
+                margin: 0 .02rem; }
+              .cons .main #wrap #scroll .content .miaosha .m_top .right {
+                position: absolute;
+                right: .1rem;
+                color: #e15f71;
+                font-size: .11rem; }
+                .cons .main #wrap #scroll .content .miaosha .m_top .right i {
+                  margin-left: .1rem; }
+            .cons .main #wrap #scroll .content .miaosha .m_main {
+              background: #fff;
+              overflow: hidden; }
+              .cons .main #wrap #scroll .content .miaosha .m_main #scroller {
+                display: flex;
+                padding-top: .05rem;
+                font-size: .14rem;
+                width: 1000px; }
+                .cons .main #wrap #scroll .content .miaosha .m_main #scroller .m_sub {
+                  width: 25%;
+                  margin: 0 2%;
+                  text-align: center; }
+                  .cons .main #wrap #scroll .content .miaosha .m_main #scroller .m_sub img {
+                    width: 100%; }
+                  .cons .main #wrap #scroll .content .miaosha .m_main #scroller .m_sub p {
+                    color: #d41707;
+                    font-size: .14rem;
+                    padding-top: .09rem;
+                    padding-bottom: .03rem; }
+                  .cons .main #wrap #scroll .content .miaosha .m_main #scroller .m_sub span {
+                    color: #b3b3b3;
+                    font-size: .1rem;
+                    text-decoration: line-through; }
+          .cons .main #wrap #scroll .content .classify {
+            margin-top: .15rem;
+            padding: .05rem;
+            box-sizing: border-box;
+            background: #fff; }
+            .cons .main #wrap #scroll .content .classify > img {
+              width: 100%; }
+            .cons .main #wrap #scroll .content .classify .classify_find {
+              display: flex;
+              flex-wrap: wrap; }
+              .cons .main #wrap #scroll .content .classify .classify_find .child {
+                width: 50%;
+                padding-left: .1rem;
+                box-sizing: border-box;
+                border: 1px solid #eee; }
+                .cons .main #wrap #scroll .content .classify .classify_find .child h3 img {
+                  width: 50%;
+                  padding-left: .1rem; }
+                .cons .main #wrap #scroll .content .classify .classify_find .child .imgs {
+                  display: flex;
+                  padding: .15rem;
+                  box-sizing: border-box; }
+                  .cons .main #wrap #scroll .content .classify .classify_find .child .imgs p {
+                    flex: 1;
+                    padding: .1rem;
+                    box-sizing: border-box; }
+                    .cons .main #wrap #scroll .content .classify .classify_find .child .imgs p img {
+                      width: 100%; }
+                .cons .main #wrap #scroll .content .classify .classify_find .child .red {
+                  color: #f00; }
+                .cons .main #wrap #scroll .content .classify .classify_find .child .blue {
+                  color: blue; }
+                .cons .main #wrap #scroll .content .classify .classify_find .child .purple {
+                  color: purple; }
+                .cons .main #wrap #scroll .content .classify .classify_find .child .all_child {
+                  display: flex; }
+                  .cons .main #wrap #scroll .content .classify .classify_find .child .all_child .left {
+                    flex: 1; }
+                  .cons .main #wrap #scroll .content .classify .classify_find .child .all_child .right {
+                    flex: 1; }
+                  .cons .main #wrap #scroll .content .classify .classify_find .child .all_child .imgs {
+                    padding-left: 0; }
+          .cons .main #wrap #scroll .content .longImg img {
+            width: 100%; }
+          .cons .main #wrap #scroll .content .apps {
+            overflow: hidden;
+            height: 150px;
+            background: #fff; }
+            .cons .main #wrap #scroll .content .apps #scroller1 {
+              width: 600px;
+              display: flex; }
+              .cons .main #wrap #scroll .content .apps #scroller1 dl {
+                flex: 1;
+                text-align: center;
+                margin-left: .05rem;
+                margin-top: .05rem; }
+                .cons .main #wrap #scroll .content .apps #scroller1 dl dt img {
+                  width: 100%; }
+                .cons .main #wrap #scroll .content .apps #scroller1 dl dd {
+                  padding-top: .1rem;
+                  padding-bottom: .1rem; }
+
+.footer {
+  height: .5rem;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box; }
+  .footer .list {
+    display: flex; }
+    .footer .list li {
+      flex: 1;
+      text-align: center;
+      padding-top: .05rem; }
+      .footer .list li i {
+        font-size: .23rem; }
+      .footer .list li span {
+        display: block; }
+    .footer .list .bg {
+      color: red; }
+
+image[lazy=loading] {
+  width: 40px;
+  height: 300px;
+  margin: auto; }
+
+/*# sourceMappingURL=style.css.map */

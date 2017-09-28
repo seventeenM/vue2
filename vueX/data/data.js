@@ -1,0 +1,26 @@
+module.exports=[
+   {
+     name:"一说科技",
+     arr:[
+      {
+      	src:"images/shang_06.jpg",
+        title:"一说 智能机器人 S1儿童陪伴机器人 玩具 早教故事机",
+        price:898,
+        old:1288,
+        id:"a1"
+      }
+     ]
+   },
+   {
+     name:"天猫超市",
+     arr:[
+      {
+      	src:"images/shang_15.jpg",
+        title:"薯片大礼包",
+        price:15,
+        old:25,
+        id:"a2"
+      }
+     ]
+   }
+]
